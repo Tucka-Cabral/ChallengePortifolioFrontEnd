@@ -8,6 +8,12 @@ coloque nas sessões indicadas*/
    --cor-de-fundo: #FFF8E9;
    --cor-de-link: #AD333C;
    --cor-secundaria:  #d9c1bb;
+   --cor-um:  #FBF5F4;
+   --cor-dois: #A08B64;
+   --cor-tres: #8C6954;
+   --cor-quatro: #FFF;
+   --cor-cinco: #FFE1D0;
+   --cor-hover: #b49d71;
 
 }
 
@@ -160,10 +166,6 @@ section.about{
 
 /*Sessão Hobbies*/
 
-section.hobbies{
-    
-}
-
 .hobbies__title{
     text-align: center;
 }
@@ -242,7 +244,7 @@ section.academic{
 /* experiência*/
 
 section.experience{
-    font-size: 22px;
+    font-size: 20px;
 
 }
 
@@ -251,16 +253,82 @@ section.experience{
     text-align: center;
 }
 
+.experiencie__box{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 60px
+}
+
+.experience__description{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.experiencia__botao--repo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border-radius: 24px;
+    background: var(--cor-tres);
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    border: 1px solid var(--cor-dois);
+    height: 40px;
+    padding: 8px 24px;
+    width: 100%;
+
+  
+    
+}
+
+.experiencia__botao--repo:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quatro);
+}
+
+.experiencia__botao--demo{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    border-radius: 24px;
+    background: var(--cor-tres);
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    border: 1px solid var(--cor-dois);
+    height: 40px;
+    padding: 8px 24px;
+    width: 100%;
+}
+
+.experiencia__botao--demo:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quatro);
+}
+
+
 /*Contato*/
 
 section.formcontato{
+    font-size: 20px;
+}
 
+.formcontato__contacto{
+    display: flex;
+    flex-direction: column;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    font-size: 20px;
+    text-align: center;
 }
 
 .topo__menu{
