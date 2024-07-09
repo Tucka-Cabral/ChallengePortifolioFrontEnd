@@ -117,7 +117,7 @@ section.title{
 }
 
 .title__subsection{
-    font-size: 22px;
+    font-size: 20px;
     text-align: justify;
 }
 
@@ -127,7 +127,7 @@ section.title{
 
 section.about{
     background-color: var(--cor-secundaria) ;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .about__container{
@@ -190,7 +190,7 @@ section.about{
 
 section.academic{
     background-color: var(--cor-secundaria) ;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .academic__title{
@@ -244,19 +244,21 @@ section.academic{
 /* experiência*/
 
 section.experience{
-    font-size: 20px;
+    font-size: 22px;
 
 }
 
 .experience__section__title{
     padding: 35px;
     text-align: center;
+ 
 }
 
 .experiencie__box{
     display: flex;
     align-items: center;
     text-align: center;
+    font-size: 18px;
     justify-content: space-around;
     padding: 50px;
     gap: 60px
@@ -267,6 +269,7 @@ section.experience{
     flex-direction: row;
     text-align: center;
     justify-content: space-around;
+    font-size: 20px;
 }
 
 .experiencia__botao--repo{
@@ -282,8 +285,6 @@ section.experience{
     height: 40px;
     padding: 8px 24px;
     width: 100%;
-
-  
     
 }
 
@@ -316,13 +317,62 @@ section.experience{
 /*Contato*/
 
 section.formcontato{
+    background-color: var(--cor-secundaria) ;
     font-size: 20px;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
 }
 
 .formcontato__contacto{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    line-height: 1.5;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 18px;
 }
+
+.formcontato__title{
+    text-align: center;
+}
+
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.formcontato__botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 15px;
+    border-radius: 24px;
+    background: var(--cor-tres);
+    font-size: 16px;
+    color: var(--cor-de-fundo);
+    border: 1px solid var(--cor-dois);
+    height: 40px;
+    padding: 8px 24px;
+    width: 20%;
+    
+}
+
+.formcontato__botao:hover{
+    background-color: var(--cor-hover);
+    color: var(--cor-quatro);
+}
+
 
 /*footeer*/
 

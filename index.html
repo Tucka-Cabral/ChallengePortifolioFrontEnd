@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +43,7 @@
             <img class="title__profile" src="assets/eu_320X276.png" alt="Minha foto">
             <div class="title__container">
                 <h2 class="title__bio"><strong> Olá, meu nome é Thais Cabral e construo páginas web </strong></h2>
-                <h3 class="title__subsection">Estou terminando o curso de formação em Front End através de um projeto Oracle ONE na Alura, que vem preparando milhares de pessoas para o mercado de trabalho, com uma formação digital de qualidade.</h3>
+                <h2 class="title__subsection">Estou terminando o curso de formação em Front End através de um projeto Oracle ONE na Alura, que vem preparando milhares de pessoas para o mercado de trabalho, com uma formação digital de qualidade.</h2>
                 <ul class="title__network">
                     <!-- Ponha os links de suas redes sociais favoritas -->
                     <li class="title__network__item"><a href="https://github.com/Tucka-Cabral">Github <img src="assets\arrow.png"> </a></li>
@@ -186,7 +186,7 @@
             <img class="experience__img" src="assets/jogosecreto.png">
             <div class="experience__info">
                 <h2 class="experience__title">Jogo Secreto - Criado em: Jan/24 </h2>
-                <h3 class="experience__text">Jogo criado com HTML, CSS e JavaScript </h3>
+                <h2 class="experience__text">Jogo criado com HTML, CSS e JavaScript </h3>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/Tucka-Cabral/jogo-numero-secreto" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
@@ -200,35 +200,40 @@
             <img class="experience__img" src="assets/Decodificador.png">
             <div class="experience__info">
                 <h2 class="experience__title">Decodificador de texto - Criado em: Mar/24</h2>
-                <h3 class="experience__text">Challenge Alura para exercitar o uso do HTML, CSS (com muito Flexbox) e JavaScript </h3>
+                <h2 class="experience__text">Challenge Alura para exercitar o uso do HTML, CSS (com muito Flexbox) e JavaScript </h2>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
                             <span class="experience__repo"><a href="https://github.com/Tucka-Cabral/Challenge-Criptografia" target="_blank"><button class="experiencia__botao--repo">Repositório</button></a></span>
                             <span class="experience__demo"><a href="https://tucka-cabral.github.io/Challenge-Criptografia/" target="_blank"><button class="experiencia__botao--demo">Ver demo</button></a></span>
                     </div>
             </div>
-        </div>  
+        </div>
+        <li class="topo__menu"><a href="#menu">Topo</a></li>  
+    </section>
 
         <!-- Sessão de Contato -->
         <section class="formcontato">
+            <h2 class="formcontato__title">Contato</h2>
             <div id="contato" class="formcontato__contacto">
                 <div class="formcontato--esquerda">
                     <img class="formcontato__img" src="assets/ShowAnimado.gif" alt="Gif soltando o microfone">
                 </div>
                 <div class="formcontato__text">
-                    <h2 class="formcontato__title">Contato</h2>
-                    <h3 class="formcontato__subtext">Isto    é um pouco do que faço. Quer entrar em contato comigo?</h3>
-                    <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
+                    <h3 class="formcontato__subtext">Isto é um pouco do que faço. Quer entrar em contato comigo? <br> Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" minlength="3" maxlength="50" required>
+                        <span class="mensagem-erro"></span>
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" minlength="4" required>
+                        <span class="mensagem-erro"></span>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
+                        <span class="mensagem-erro"></span>
                         <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
+                        <span class="mensagem-erro"></span>
+                        <button class="formcontato__botao" type="submit">Enviar mensagem</button>
                     </form>
                 </div>
             </div>
-            <li class="topo__menu"><a href="#menu">Topo</a></li>
+            
         </section>
 
         <!-- Sessão de Footer/Rodapé-->
@@ -238,9 +243,9 @@
                 <p>2024</p>
             </div>
         </section>
-    </div>
+
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
+<script src="scripts/validate.js"></script>
 </body>
 </html>
 
